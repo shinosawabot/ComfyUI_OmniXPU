@@ -1,0 +1,73 @@
+{
+  "source_repository": "https://github.com/intel/llm-scaler",
+  "source_revision": "38d9a3dbbfecd3a5293a8acd75efef54f9bb3719",
+  "source_path": "omni/ComfyUI-OmniXPU",
+  "repository": "https://github.com/shinosawabot/ComfyUI_OmniXPU",
+  "import_kind": "standalone source snapshot; upstream Git history remains at source_repository",
+  "architecture_references": [
+    {
+      "repository": "https://github.com/xiangyuT/owl-xpu",
+      "revision": "7ecf3402d87381aa7f8fb608840c1c6facd3695d"
+    },
+    {
+      "repository": "https://github.com/xiangyuT/omni-xpu-kernel-tuning",
+      "revision": "c1a22c362e162b69dc3e3a628a02a6494bed9a15"
+    }
+  ],
+  "runtime_files_changed": false,
+  "source_files_sha256": {
+    "probe.py": "341761209d66d60a890bf07955098c26542a407a1f102d840383200b925d1b62",
+    "runtime_bootstrap.py": "a0ba4ab2f2fde8b615aeff9f72436a436da2876b92759e08eba39edcccefb571",
+    "prestartup_script.py": "825ad070809ecda7b83b01c2aafdff0833fce8d24ea94d747f1a778670d26791",
+    "__init__.py": "d86d820595694d803323e8164fdd7a1b72fe629436bc11458f1b08bedccaee87",
+    "config.py": "c44197cdb9930b6c9a1a9aa782aac8322161a7700b3ca6dc26298c05631b9280",
+    "adapters/dynamic_vram.py": "e25ae169de0f6111965576b2b293f156d9dfaa0e06f05adaa1bfeb9cb6dd4a00",
+    "adapters/errors.py": "48dcd8bbe83a113c13d9d1e0464873b6934c823ec0585cbc3259dd818b54351d",
+    "adapters/seedvr_capacity.py": "2fc2e3c80e403986beb03058c084cf71bd9ea7d68d3a1a5dac349afbe5da58a4",
+    "adapters/rotary.py": "6c63f16c3785a84468ecb2ff8f843809d5e3b9ebbec46e0ac8d8f95027da2fb6",
+    "adapters/int8_ffn.py": "65057621d2d8210cfb1bcaa92ec9c27da1cbcea1b70f9b58e157901201654a47",
+    "adapters/h3_rms_modulation.py": "ec3983ec3a8082c03cd25b36a6d3b39683409a555332abda04bb6c793aaea391",
+    "adapters/norm.py": "2389fdbdb6eb46f9df2140fd799f2bb55f1a137b64183f13af26eb7765cff562",
+    "adapters/lora_memory.py": "e93c68675c1d0edf19823e4a96609027259fd88eaad871fbb70af325046f1031",
+    "adapters/sparse_attention.py": "379efca4daf4b3cda29d63af019df7fa75a64eea251718f3675a249de092ec03",
+    "adapters/__init__.py": "b4b090205fda73999967c7398df29cce5a283805fdbd52080aaaf99110a42fdc",
+    "adapters/attention.py": "d6afbae921d9ed49a5d5fa7f3277ace7cb54b7aa68686e63ab22a01106dd6956",
+    "adapters/fp8_gemm.py": "b1469f28f6810aec465b07efedff9aab34915710d7edd24de729c7eee9878d77",
+    "adapters/seedvr_cat_pad.py": "629481fd1876ff668dd5f3215b212ec53fff0b917a1ac6f4f51f6d8b9b52d568",
+    "adapters/quantized_matmul.py": "8a436a3cf6080c18fc8701daef3bd606e92ba6b38fc5698ef1b0b1e9b49b21e2",
+    "adapters/large_video_preprocess.py": "d3b26316356622b59e4ada12539ace5764aed0b0a5cc4ead6c9c28ab314dc608",
+    "nodes/diagnostics.py": "33ca515e6a4b9edc138768e371ccfb449ed944007b3abfaa71e8d27cbc85639c",
+    "nodes/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "patches/debug.py": "ec39e0e73337c2b9b075f9718145a3af9281e687f6d0a53731f439daa8210d53",
+    "patches/__init__.py": "ccb1226aef761d88680aa5567c4e89d06dbbd0c141f939c71f92547597e92510",
+    "fixes/seedvr_ada.py": "0c59f8c0774e6bb09e1f930dd9a0441d4f5efd879816149f6001920c6cce5101",
+    "fixes/legacy_interpolate.py": "728214accaa13be4d7c7cbd6e705a3e3e5a9eaebc3dc5267e033c9ab7c22d6a9",
+    "fixes/legacy_median.py": "e14a3a4ef9617bfb179a59f6026cc5ea8b67d2db6b6b88fb5de864461e4ca639",
+    "fixes/__init__.py": "d400942ca92ebcd1aeccd41bc5de88d0886626281e5fed4a4b9c0c674432a23c"
+  },
+  "test_import": {
+    "source_path": "omni/tests/test_comfyui_omnixpu_*.py",
+    "adaptation": "Remove ComfyUI-OmniXPU path segment to address standalone repository root; runtime module names unchanged.",
+    "files_sha256": {
+      "tests/test_comfyui_omnixpu_quantized_matmul.py": "e3eadc9a063817f823832d8a4103cd2a9dfb2f325e113d72a7dd610201836e82",
+      "tests/test_comfyui_omnixpu_dynamic_vram.py": "16e60ff8ff27a0221f5a5dd8b52fd9e9f2442f6450a5e6f990ff8b5537bbc30c",
+      "tests/test_comfyui_omnixpu_norm.py": "b3385c8d71bea1a77ec0c824689cea874bbb669989532a362f71ca70f07b4f49",
+      "tests/test_comfyui_omnixpu_seedvr_capacity.py": "2ee2b2790978fc89ba85abe7ca2b7bbe77526844ecefce7f02fb548b5db33f66",
+      "tests/test_comfyui_omnixpu_attention.py": "a2f4456c7b8414595606dde1da66619d4bfbdbbc8bc1d8d28d75cc2c077c5779",
+      "tests/test_comfyui_omnixpu_errors.py": "1cb54f908d9a68ab8880dba6c6bdfb4d96cc38ade73da5217af88478ff756118",
+      "tests/test_comfyui_omnixpu_torch_compile.py": "00696b8209840ffdb0ad61e77ff68907aecdab30acc4ae64b6a469a88f67ac81",
+      "tests/test_comfyui_omnixpu_lora_memory.py": "0bce2c8259c8bdaa52a591726daa71a210a2d4445f758532b941307445f84ccd",
+      "tests/test_comfyui_omnixpu_h3_rms_modulation.py": "8afde1e1e40e4fe53f78025a7f6555c88724777f154af10df94e842fa7a76ca1",
+      "tests/test_comfyui_omnixpu_int8_ffn.py": "c2fb3c08855415c7094b195196e0c1b413e6139d7bc16b2e035ef9569a551dc9",
+      "tests/test_comfyui_omnixpu_debug.py": "68740d22686891a0c619aa9df127538884344be0b8865ed1b4c6e6c08085bb8a",
+      "tests/test_comfyui_omnixpu_runtime_providers.py": "3ee1719e772cfcdc3e926a4aff9c75255a423dd2521897c1241c67d40056060d",
+      "tests/test_comfyui_omnixpu_sparse_attention.py": "ecd5bf158b442cc14d4b608e361ae63e8194b4ac8cbbbf5afad4258d561ef7b9",
+      "tests/test_comfyui_omnixpu_rotary.py": "3cd6d51a6648cbf7445808731a321e76c7cd7d4c354afb7a5ae61e35b12008dd",
+      "tests/test_comfyui_omnixpu_bootstrap.py": "8ab351c8de91c65c69b3a138572214290860629110e65b53e8c2170fa2ac7fc9",
+      "tests/test_comfyui_omnixpu_seedvr_ada.py": "ed1c5dab4d0036c54bfa50623dbb22619510ebb3f5a600a8af427b6d22733f31",
+      "tests/test_comfyui_omnixpu_large_video_preprocess.py": "88d15d91db8f72011f197f9481d4819a4f822deff718497b01f078cc339017df",
+      "tests/test_comfyui_omnixpu_prestartup.py": "dad3f47970a11f95f2da8d5e5e9639babde07cde4206abcab7fa8ee5c9aef7ef",
+      "tests/test_comfyui_omnixpu_seedvr_cat_pad.py": "0a7cca6fad03dcf18c2b5623aef35c8e0db83cce548303b9568521e0e129aceb"
+    }
+  }
+}
