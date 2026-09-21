@@ -6,18 +6,15 @@
   "import_kind": "standalone source snapshot; upstream Git history remains at source_repository",
   "architecture_references": [
     {
-      "repository": "https://github.com/xiangyuT/owl-xpu",
+      "repository": "https://github.com/shinosawabot/owl-xpu",
       "revision": "7ecf3402d87381aa7f8fb608840c1c6facd3695d"
-    },
-    {
-      "repository": "https://github.com/xiangyuT/omni-xpu-kernel-tuning",
-      "revision": "c1a22c362e162b69dc3e3a628a02a6494bed9a15"
     }
   ],
-  "runtime_files_changed": false,
+  "runtime_files_changed": true,
+  "runtime_change_summary": "Provider manifest repository identities were updated to the canonical shinosawabot repositories.",
   "source_files_sha256": {
     "probe.py": "341761209d66d60a890bf07955098c26542a407a1f102d840383200b925d1b62",
-    "runtime_bootstrap.py": "a0ba4ab2f2fde8b615aeff9f72436a436da2876b92759e08eba39edcccefb571",
+    "runtime_bootstrap.py": "0100c0f44aa8b4763e5faa7ed97ea9e2173b8c147d034bc8099f56c84c7314e2",
     "prestartup_script.py": "825ad070809ecda7b83b01c2aafdff0833fce8d24ea94d747f1a778670d26791",
     "__init__.py": "d86d820595694d803323e8164fdd7a1b72fe629436bc11458f1b08bedccaee87",
     "config.py": "c44197cdb9930b6c9a1a9aa782aac8322161a7700b3ca6dc26298c05631b9280",

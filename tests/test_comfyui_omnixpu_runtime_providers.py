@@ -563,7 +563,7 @@ def test_discovery_rejects_incompatible_or_tampered_provider(
         },
         "canonical_import": "comfy_kitchen",
         "source": {
-            "repository": "https://github.com/xiangyuT/comfy-kitchen-xpu.git",
+            "repository": "https://github.com/shinosawabot/comfy-kitchen.git",
             "revision": "a" * 40,
             "distribution": "comfy-kitchen",
             "version": "0.2.31",

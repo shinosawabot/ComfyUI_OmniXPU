@@ -10,7 +10,7 @@ Original attribution and the Apache-2.0 license are retained; this is not an Int
 
 ## Install
 
-Clone this private repository directly into ComfyUI's `custom_nodes` directory:
+Clone this public repository directly into ComfyUI's `custom_nodes` directory:
 
 ```bash
 git clone https://github.com/shinosawabot/ComfyUI_OmniXPU.git /path/to/ComfyUI/custom_nodes/ComfyUI_OmniXPU
